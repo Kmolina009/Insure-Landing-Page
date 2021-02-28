@@ -49,6 +49,9 @@ header{
     width: 100vw;
     height:82px;
 }
+hr{
+    margin:0px;
+}
 header figure{
     display:inline-block;
     height:18px;
@@ -171,13 +174,54 @@ span[data-nav-span="account"]{
     height: 599px;
 }
 /* section-we're different */
-.were-different{}
-.were-different hr{}
+.were-different{
+    display: flex;
+    flex-direction: column;
+    height: 631px;
+    width: 369px;
+}
+.were-different hr{
+    width: 150px;
+}
 .were-different div{}
 .were-different{}
 
 /* section-find out more */
+.find-out-more{
+    height: 252px;
+    width: 1108px;
+}
+.find-out-more hr{
+    width: 150px;
+    border-top: 149px;
+}
+.selling-points{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.selling-points > div{
+    height: 443px;
+    width: 369px;
+}
+
 /* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 394px;
+    width: 1440px;
+}
+.footer-links{
+    width: 1108px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-link{
+    display: flex;
+    flex-direction: column;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 /* Classes in multiple sections */
