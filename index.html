@@ -10,25 +10,31 @@
 <body>
   <header>
     <figure>
-      <icon class="brand-name"></icon>
+      <span class="brand-name">
+      </span>
     </figure>
     <nav>
-      <span>How we work</span>
-      <span>Blog</span>
-      <span>Account</span>
-      <span>View plans</span>
+      <span data-nav-span="how-we-work" alt="How we work">How we work</span>
+      <span data-nav-span="blog" alt="Blog">Blog</span>
+      <span data-nav-span="account" alt="Account">Account</span>
+      <span class="view-plans">View plans</span>
     </nav>
+    <div class="poot"></div>
   </header>
 
 <main class="container">
+  <div class="intro-bg"></div>
   <section class="intro">
+    <hr>
+    <div>
     <h1>Humanizing your insurance.</h1>
     <p>
       Get your life insurance coverage easier and faster. We blend our expertise 
     and technology to help you find the plan that’s right for you. Ensure you 
     and your loved ones are protected.
     </p>
-    <a href="#">View plans</a>
+    <a href="#" class="view-plans">View plans</a>
+  </div>
     <!-- have the tag change the image based on media query(Desktop/Mobile) -->
     <img src="./images/image-intro-desktop.jpg" alt="">
   </section>
@@ -69,6 +75,7 @@
 </main>
 
   <footer>
+    <hr>
     <div class="brand-name"></div>
   <nav footer-links="">
     <h4 class="footer-link">Our company</h4>
@@ -103,6 +110,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="https://kit.fontawesome.com/96a29e4f94.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </body>
