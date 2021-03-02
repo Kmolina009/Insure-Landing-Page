@@ -45,6 +45,13 @@ body{
 a{
     text-decoration: none;
 }
+ul{
+    list-style: none;
+    padding: 0px;
+}
+li{
+    margin-bottom: 10px;
+}
 /* Header */
 header{
     width: 100vw;
@@ -105,7 +112,7 @@ span[data-nav-span="account"]{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 1934px;
+    height: 1808px;
     width: 1440px;
 }
 /* Sections */
@@ -231,18 +238,47 @@ span[data-nav-span="account"]{
 footer{
     display: flex;
     flex-direction: column;
-    height: 394px;
+    height: 350px;
     width: 1440px;
+    position: relative;
+    /* left: 80px; */
+}
+.footer-nav-container{
+    position: relative;
+    top: 66px;
+    left: 160px;
+    width: 1108px;
+}
+footer .brand-name{
+    position: relative;
+    /* left: 80px; */
 }
 .footer-links{
     width: 1108px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+    font-family: var(--Body-Font);
 }
 .footer-link{
     display: flex;
     flex-direction: column;
+    font-size: var(--Body-Font-size);
+    color: var(--Grayish-Blue);
+}
+.footer-links section{
+    width: 213px;
+    margin-right: 175px;
+}
+.footer-links section ul{
+    width: 213px;
+    margin-right: 175px;
+    /* color: var(--Dark-Violet); */
+    color: black;
+}
+.footer-links section ul a{
+    font-weight: var(--Body-Font-Weight-1);
+    color: var(--Very-Dark-Violet);
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
