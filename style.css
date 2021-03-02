@@ -186,22 +186,22 @@ span[data-nav-span="account"]{
 }
 .were-different hr{
     width: 150px;
+    background-color: var(--Very-Light-Gray);
 }
 .were-different div{
-    /* width: 369px;
-    height: 443px; */
     font-family: var(--Body-Font);
     font-weight: var(--Body-Font-Weight-1);
     font-size: var(--Body-Font-size);
+    color: var(--Dark-Grayish-Violet);
+    
 }
-.were-different h1{
+.were-different h1,.were-different h3{
     font-family: var(--Heading-Font);
     font-weight: var(--Heading-Font-Weight);
     font-size: 47px;
+    color:var(--Very-Dark-Violet);
 }
 .were-different h3{
-    font-family: var(--Heading-Font);
-    font-weight: var(--Heading-Font-Weight);
     font-size: 21px;
 }
 
@@ -252,7 +252,7 @@ footer{
 
 /* ***********************Icons*********************** */
 .were-different-icons{
-    margin: 0;
+    margin: 40px 0px;
     width: 88px;
     height: 88px;
 }
@@ -265,7 +265,6 @@ footer{
     background-repeat: no-repeat;
 }
 .snappy-process-icon{
-
     background-image: url(./images/icon-snappy-process.svg);
 }
 .affording-pricing-icon{
