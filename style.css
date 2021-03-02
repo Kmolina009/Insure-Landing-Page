@@ -85,8 +85,6 @@ header nav span{
 }
 nav .view-plans{
     border:1px solid var(--Very-Dark-Violet);
-    justify-content: center;
-    align-items: center;
     color: var(--Very-Dark-Violet);
 }
 span[data-nav-span="how-we-work"]{
@@ -151,16 +149,8 @@ span[data-nav-span="account"]{
     font-family: var(--Body-Font);
 }
 .intro a{
-    display: inline-flex;
     height: 41px;
     width: 146px;
-    border: var(--Very-Light-Gray) solid 1px;
-    align-items: center;
-    justify-content: center;
-    font-size: var(--Body-Font-size);
-    font-weight: var(--Body-Font);
-    font-family: var(--Body-Font);
-    color: var(--Very-Light-Gray);
 }
 .intro img{
     height: 651px;
@@ -205,15 +195,6 @@ span[data-nav-span="account"]{
     font-size: 21px;
 }
 
-/* section-find out more */
-.find-out-more{
-    height: 252px;
-    width: 1108px;
-}
-.find-out-more hr{
-    width: 150px;
-    border-top: 149px;
-}
 .selling-points{
     display: flex;
     flex-direction: row;
@@ -224,7 +205,28 @@ span[data-nav-span="account"]{
     height: 443px;
     width: 369px;
 }
+/* section-find out more */
+.find-out-more{
+    display: flex;
+    flex-direction: row;
+    height: 252px;
+    width: 1108px;
+    background-color: var(--Dark-Violet);
+    align-items: center;
+}
+.find-out-more h1{
+    position: relative;
+    left: 82px;
+    font-family: var(--Heading-Font);
+    font-weight: var(--Heading-Font-Weight);
+    font-size: 40px;
+    color: var(--Very-Light-Gray);
+}
 
+.find-out-more a{
+    position: relative;
+    left: 250px;
+}
 /* Footer */
 footer{
     display: flex;
@@ -248,6 +250,22 @@ footer{
 .view-plans{
     height: 39px;
     width: 146px;
+    justify-content: center;
+    align-items: center;
+}
+section .view-plans {
+    display: inline-flex;
+    height: 39px;
+    width: 146px;
+    justify-content: center;
+    align-items: center;
+    border: var(--Very-Light-Gray) solid 1px;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--Body-Font-size);
+    font-weight: var(--Body-Font);
+    font-family: var(--Body-Font);
+    color: var(--Very-Light-Gray);
 }
 
 /* ***********************Icons*********************** */
