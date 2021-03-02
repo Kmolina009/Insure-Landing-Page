@@ -24,7 +24,8 @@
  /* Body */
 
 --Body-Font: 'Karla', sans-serif;;
---Body-Font-Weight-: 400, 700;
+--Body-Font-Weight-1: 400;
+--Body-Font-Weight-2: 700;
 --Body-Font-size: 16px;
 
 /* Sort out Icons */
@@ -119,6 +120,7 @@ span[data-nav-span="account"]{
     display: flex;
     flex-direction: row;
     position: relative;
+    top:104px;
     height: 791px;
     background-image: var(--Very-Dark-Violet);
 }
@@ -179,12 +181,29 @@ span[data-nav-span="account"]{
     flex-direction: column;
     height: 631px;
     width: 369px;
+    position: relative;
+    top:120px;
 }
 .were-different hr{
     width: 150px;
 }
-.were-different div{}
-.were-different{}
+.were-different div{
+    /* width: 369px;
+    height: 443px; */
+    font-family: var(--Body-Font);
+    font-weight: var(--Body-Font-Weight-1);
+    font-size: var(--Body-Font-size);
+}
+.were-different h1{
+    font-family: var(--Heading-Font);
+    font-weight: var(--Heading-Font-Weight);
+    font-size: 47px;
+}
+.were-different h3{
+    font-family: var(--Heading-Font);
+    font-weight: var(--Heading-Font-Weight);
+    font-size: 21px;
+}
 
 /* section-find out more */
 .find-out-more{
@@ -199,6 +218,7 @@ span[data-nav-span="account"]{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 1108px;
 }
 .selling-points > div{
     height: 443px;
@@ -229,6 +249,34 @@ footer{
     height: 39px;
     width: 146px;
 }
+
+/* ***********************Icons*********************** */
+.were-different-icons{
+    margin: 0;
+    width: 88px;
+    height: 88px;
+}
+.were-different-icons > span{
+    display: inline-block;
+    /* margin: 0; */
+    height: 88px;
+    width: 88px;
+    background-size:88px 88px;
+    background-repeat: no-repeat;
+}
+.snappy-process-icon{
+
+    background-image: url(./images/icon-snappy-process.svg);
+}
+.affording-pricing-icon{
+    background-image: url(./images/icon-affordable-prices.svg);
+    /* background-size:88px 88px; */
+}
+.people-first-icon{
+    background: url(./images/icon-people-first.svg);
+    /* background-size:88px 88px; */
+}
+
 /* Mobile Media Query */
 @media only screen and (max-width:376px){
     body{
