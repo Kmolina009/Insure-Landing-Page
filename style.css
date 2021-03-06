@@ -1,6 +1,9 @@
 /* Imports */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
+   
 /* Custome Properties */
 :root {
   /* Colors */
@@ -27,10 +30,21 @@
   --Body-Font-size: 16px;
 
 }
+html{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin:0;
+  padding:0;
+  line-height: 1;
 }
 a {
   text-decoration: none;
@@ -44,6 +58,8 @@ li {
 }
 /* Header */
 header {
+  position: relative;
+  left: 133px;
   width: 100vw;
   height: 82px;
 }
@@ -67,7 +83,7 @@ header nav {
   display: inline-flex;
   height: fit-content;
   position: relative;
-  left: 700px;
+  left: 655px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -110,6 +126,10 @@ span[data-nav-span="account"] {
   margin: 0 auto;
   width: 1108px;
 }
+h1 > span{
+    content: "\A";
+    white-space: pre;
+  }
 /* section-intro */
 .intro {
   display: flex;
@@ -122,9 +142,9 @@ span[data-nav-span="account"] {
 .intro hr {
   position: relative;
   top: 0px;
-  left: 148px;
+  left: 100px;
   height: 0px;
-  width: 150px;
+  width: 100px;
   margin: 0px;
   border-top: white solid 1px;
 }
@@ -132,25 +152,31 @@ span[data-nav-span="account"] {
   position: relative;
   top: 0px;
   left: 0px;
-  height: 544px;
-  width: 405px;
+  height: 405px;
+  width: 544px;
   margin: 0px;
   color: var(--Very-Light-Gray);
 }
 .intro h1 {
   font-family: var(--Heading-Font);
-  font-size: 46px;
   font-weight: var(--Heading-Font-Weight);
+  font-size: 46px;
+  margin: 50px 0px 12px 0px;
+  letter-spacing: .5px;
 }
 .intro p {
-  font-size: 12px;
+  font-size: var(--Body-Font-size);
   font-family: var(--Body-Font);
+  /* word-spacing: 1px; */
+  letter-spacing: .5px;
 }
 .intro a {
   height: 41px;
   width: 146px;
 }
 .intro img {
+  position: relative;
+  left: 128px;
   height: 651px;
   width: 540px;
 }
@@ -215,6 +241,7 @@ span[data-nav-span="account"] {
 .find-out-more h1 {
   position: relative;
   left: 82px;
+  width: 486px;
   font-family: var(--Heading-Font);
   font-weight: var(--Heading-Font-Weight);
   font-size: 40px;
@@ -298,8 +325,8 @@ footer .s-media-links span {
 }
 section .view-plans {
   display: inline-flex;
-  height: 39px;
-  width: 146px;
+  height: 40px;
+  width: 160px;
   justify-content: center;
   align-items: center;
   border: var(--Very-Light-Gray) solid 1px;
