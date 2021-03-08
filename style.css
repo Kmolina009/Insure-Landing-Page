@@ -57,6 +57,7 @@ li {
   margin-bottom: 10px;
 }
 /* Classes in multiple sections */
+
 .view-plans {
     height: 39px;
     width: 146px;
@@ -372,6 +373,103 @@ footer .s-media-links span {
 
 /* Mobile Media Query */
 @media only screen and (max-width: 376px) {
-  body {
+  /* html, body {
+    flex-direction: column;
+    width: 375px;
+    height: 3851px;
+  } */
+  /* Hidden Elements */
+  .intro-bg, header nav, .intro hr{
+      display: none;
+    }
+  html, body, header,.container,.container section,section>*, footer{
+    flex-direction: column;
+    width: 375px;
+    /* height: 3851px; */
+  }
+  /* Header */
+  /* header{
+    
+  } */
+  header figure{
+    left:0px
+  }
+  /* Section */
+  .container>section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: auto;
+    margin: 0 auto;
+  }
+  .intro{
+    height: 950px;
+  }
+  .intro div{
+    position: relative;
+    left: 69px;
+    height: 450px;
+    width: 375px;
+    background-color: var(--Dark-Violet);
+  }
+  .intro img{
+
+  }
+  .were-different{
+    height: 1312px;
+    width: 326px;
+    flex-direction: column;
+  }
+  .were-different hr{
+    position: relative;
+    top:139px;
+    margin: 0px;
+    /* height: 1312px; */
+    /* flex-direction: column; */
+  }
+  .were-different h1{
+    position: relative;
+    top:190px;
+    margin: 0px;
+    align-items: center;
+    width: auto;
+    /* height: 1312px; */
+    /* flex-direction: column; */
+  }
+  .selling-points{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 250px;
+    /* justify-content: space-between; */
+    width: 375px;
+  }
+  .selling-points div{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 0 auto;
+    width: 326px;
+    height: 309px;
+  }
+  .selling-points div>*{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+  }
+  .selling-points div>h3{
+    top: 39px;
+  }
+  .selling-points div>p{
+    top: 56px;
+  }
+  .find-out-more{
+    width: 343px;
+  }
+  /* Footerr */
+  footer{
+    display: flex;
+    flex-direction: column;
   }
 }
