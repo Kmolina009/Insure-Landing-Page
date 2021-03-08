@@ -394,6 +394,9 @@ footer .s-media-links span {
   header figure{
     left:0px
   }
+  .container{
+    height: auto;
+  }
   /* Section */
   .container>section{
     display: flex;
@@ -412,6 +415,7 @@ footer .s-media-links span {
     height: 450px;
     width: 375px;
     background-color: var(--Dark-Violet);
+    text-align: center;
   }
   .intro img{
 
@@ -471,5 +475,56 @@ footer .s-media-links span {
   footer{
     display: flex;
     flex-direction: column;
+    height: 1000px;
+
+  }
+  footer hr{
+  position: relative;
+  top: 39px;
+  }
+  .footer-head{
+    height: 44px;
+    /* width: 375px; */
+    width: 205px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer-head .brand-name,
+  .footer-head .s-media-links,
+  .footer-nav-container,
+  .footer-links,
+  .footer-links section{
+    margin: 0 auto;
+  }
+  .footer-head .brand-name{
+    height: 375px;
+    width: 113px;
+  }
+  .s-media-links{
+    position: relative;
+    top:25px;
+    width: 161px;
+    }
+  .footer-nav-container{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    width: 204px;
+    position: relative;
+    top: 78px;
+    left: 0px;
+    
+  }
+  .footer-links{
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    width: 205px;
+  }
+  .footer-links section{
+    text-align: center;
+  }
+  .footer-links section h4{
+    width: auto;
   }
 }
