@@ -31,7 +31,7 @@
 
 }
 html{
-    margin: 0;
+  margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -151,8 +151,9 @@ span[data-nav-span="account"] {
   margin: 0 auto;
   width: 1108px;
 }
-h1 > span{
-    content: "\A";
+.line-break,.line-break span[data-media-query="mobile"]{
+  display: block;  
+  content: "\A";
     white-space: pre;
   }
 /* section-intro */
@@ -385,6 +386,8 @@ footer .s-media-links span {
   html, body, header,.container,.container section,section>*, footer{
     flex-direction: column;
     width: 375px;
+    /* overflow: hidden; */
+    margin: 0;
     /* height: 3851px; */
   }
   /* Header */
@@ -395,7 +398,10 @@ footer .s-media-links span {
     left:0px
   }
   .container{
-    height: auto;
+    height: 2712px;
+    position: relative;
+    /* top: -108px; */
+    bottom: 108px;
   }
   /* Section */
   .container>section{
@@ -403,7 +409,7 @@ footer .s-media-links span {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: auto;
+    /* top: auto; */
     margin: 0 auto;
   }
   .intro{
@@ -412,16 +418,37 @@ footer .s-media-links span {
   .intro div{
     position: relative;
     left: 69px;
-    height: 450px;
+    height: 500px;
     width: 375px;
     background-color: var(--Dark-Violet);
     text-align: center;
   }
-  .intro img{
-
+  .intro div h1{
+    width: 338px;
+    /* margin-top: 90px; */
+   margin:90px auto 0px auto;
   }
+  .intro div p{
+    height: 152px;
+    width: 352px;
+    margin: 20px auto;
+    line-height: 23px;
+    letter-spacing: 1px;
+    /* margin:90px auto 0px auto; */
+    
+  }
+  .intro div a{
+    /* margin-top: 90px; */
+  }
+  .intro img{
+    /* 540px x 651px */
+    height: 452px;
+    width: 375px;
+    left: 68px;
+  }
+  /* TODO adjust sizing of were-different till it's able to  */
   .were-different{
-    height: 1312px;
+    height: 940px;
     width: 326px;
     flex-direction: column;
   }
@@ -469,18 +496,36 @@ footer .s-media-links span {
     top: 56px;
   }
   .find-out-more{
-    width: 343px;
+    position: relative;
+    top: 387px;
+    height: 343px;
+    width: 327px;
+    text-align: center;
+  }
+  .find-out-more h1{
+    left:0px;
+    width:373px;
+  }
+  .find-out-more h1 span{
+    left:0px;
+    width:373px;
+  }
+  .find-out-more .view-plans{
+    left:0px;
+    top:35px;
+    /* width:373px; */
   }
   /* Footerr */
   footer{
     display: flex;
     flex-direction: column;
-    height: 1000px;
-
+    height: 734px;
+    bottom: 149px;
+    position: relative;
   }
   footer hr{
   position: relative;
-  top: 39px;
+  top: 173px;
   }
   .footer-head{
     height: 44px;
@@ -518,7 +563,7 @@ footer .s-media-links span {
   .footer-links{
     flex-direction: column;
     position: relative;
-    top: 20px;
+    top: 86px;
     width: 205px;
   }
   .footer-links section{
