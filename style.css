@@ -409,6 +409,29 @@ footer .s-media-links span {
   header figure{
     left:0px
   }
+  header .mobile-nav{
+    height: 35px;
+    width: 35px;
+  }
+  span[data-mobile-nav]{
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    left: 74px;
+    height: 35px;
+    width: 35px;
+    background-image: url("./images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    cursor: pointer;
+  }
+  /* span[data-mobile-nav]{
+    position: relative;
+    left: 300px;
+    background-image: url("./images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+  } */
   .container{
     /* height: 2500px; */
     height: 3000px;
@@ -535,7 +558,7 @@ footer .s-media-links span {
   footer{
     display: flex;
     flex-direction: column;
-    height: 879px;
+    height: 900px;
     /* height: 890px; */
     /* bottom: 149px; */
     top: 596px;
